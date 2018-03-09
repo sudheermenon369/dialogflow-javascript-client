@@ -32,6 +32,10 @@ export interface IServerResponse {
         speech: string;
         fulfillment?: {
             speech: string
+            messages:{
+                type: number,
+                speech: string
+            }
         }
     };
     status: {
